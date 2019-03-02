@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}登陆成功{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form class="form-signin" method="post">
+  <h2 class="form-signin-heading">Flask Demo</h2>
+  <p>你好...{{g.user['username']}}</p>
+</form>
+{% endblock %}
